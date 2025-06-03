@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grace Dumling Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container d-flex align-items-center">
+      <!-- Dark mode toggle button -->
+      <button class="btn btn-link nav-link p-0 me-3" id="themeToggle" aria-label="Toggle theme">
+        <i class="bi bi-moon-fill fs-4" id="themeIcon"></i>
+      </button>
+
+      <!-- Brand name -->
+      <a class="navbar-brand me-auto" href="#home">Grace Dumling</a>
+
+      <!-- Navbar toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Home Section -->
+<section id="home" class="home-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 home-text">
+        <h1>Hello World,</h1>
+        <h1>I'm <span class="highlight-name">Grace Dumling</span></h1>
+        <p>
+          a fresh graduate and aspiring Front end Developer from St. Clare College of Caloocan
+        </p>
+        
+        <!-- Download CV Button -->
+        <a href="RESUME.pdf" download class="btn btn-primary mt-3">
+          Download My CV
+        </a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="home.png" alt="Profile Picture" class="home-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- About Section -->
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-heading text-start mb-4">
+      <i class="bi bi-person-circle me-2"></i>About Me
+    </h2>
+
+    <div class="row align-items-center">
+      <!-- Image Carousel -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <div id="profileCarousel"
+             class="carousel slide"
+             data-bs-ride="carousel"
+             data-bs-interval="3000"
+             data-bs-wrap="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="5.jfif" alt="Profile 5" class="home-img d-block w-100">
+            </div>
+             <div class="carousel-item">
+              <img src="6.jfif" alt="Profile 4" class="home-img d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="1.jfif" alt="Profile 2" class="home-img d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="2.jfif" alt="Profile 3" class="home-img d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="3.jfif" alt="Profile 4" class="home-img d-block w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Text -->
+      <div class="col-md-6">
+        <p class="about-text" style="text-align: justify;">
+          Hello world! I'm Grace Dumling, a recent graduate of
+          Bachelor of Science in Computer Science from St. Clare College 
+          of Caloocan (Batch 2024–2025). I'm 21 years old and currently living
+          in Bagong Silang, Caloocan City. During my academic years, I developed
+          a strong interest in web development and programming. I have experience 
+          using technologies such as HTML, CSS, JavaScript, React, and MySQL, and 
+          I’m currently exploring Laravel for backend development. I'm passionate about
+          creating user-friendly applications and continuously learning new tools and frameworks.
+          I'm also a team player who loves collaborating with others to solve 
+          problems and build impactful projects. When I’m not coding, I spend my time
+          playing online games, watching movies, or enjoying outdoor activities like biking 
+          and exploring nature. I’m currently looking for opportunities to grow as a developer
+          and be part of a dynamic tech team. Let’s connect!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="skills" class="section">
+  <div class="container">
+    <h2 class="section-heading text-start mb-4">
+      <i class="bi bi-tools me-2"></i>Skills
+    </h2>
+
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="html.png" alt="HTML Logo" />
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="react.png" alt="React Logo" />
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="js.png" alt="JavaScript Logo" />
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="css.png" alt="CSS Logo" />
+        </div>
+      </div>
+
+        <!-- new 4 pics -->
+
+      <div class="row justify-content-center">
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="sqll.png" alt="PHP Logo" />
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="word.png" alt="Laravel Logo" />
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="pr.png" alt="MySQL Logo" />
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="skill-bg">
+          <img src="photoshop.png" alt="Vue.js Logo" />
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-heading text-start mb-4">
+      <i class="bi bi-envelope me-2"></i>Get in Touch
+    </h2>
+    <p>You can reach me through the following channels. I’d be happy to connect and discuss any opportunities or projects.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-auto">
+    <div class="social-icons fs-1 mt-3">
+      <a href="https://www.facebook.com/grace.dumling.2024" target="_blank" class="text-decoration-none me-3">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/gwace.jpg/" target="_blank" class="text-decoration-none me-3">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:your.email@example.com" class="text-decoration-none me-3">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+      
+
+      <div class="row justify-content-center">
+      
+         <div class="social-icons fs-1 mt-3">
+
+          <a href="https://x.com/grcedmlng?s=21" target="_blank" class="text-decoration-none me-3">
+        <i class="bi bi-twitter"></i>
+      </a>
+          <a href="https://github.com/gracedumling" target="_blank" class="text-decoration-none me-3">
+        <i class="bi bi-github"></i></a>
+
+         <a href="https://www.linkedin.com/in/grace-dumling-36618428a/" target="_blank" class="text-decoration-none me-3">
+        <i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>

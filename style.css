@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding-top: 70px; /* for fixed navbar */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Home Section */
+.home-section {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+@media (max-width: 767.98px) {
+  .home-text {
+    margin-bottom: 20px; /* dagdag space sa baba kapag maliit ang screen */
+  }
+}
+
+
+.home-img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.highlight-name {
+  color: #00008B;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-heading {
+  color: #00008B;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.about-text{
+  font-family: 'Poppins', sans-serif;
+}
+.section-heading {
+  font-weight: 600;
+}
+
+.home-img {
+  max-height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.dark-mode .about-text {
+  color: #f1f1f1;
+}
+
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00008B;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  background-color: #e9ecef;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.skill-bg {
+  background-color: #DEE7ED;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px; /* space sa ilalim kapag nag-wrap */
+
+  /* Para sa 3D effect sa animation */
+  perspective: 1000px;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.skill-bg img {
+  max-width: 200%;
+  max-height: 100%;
+  object-fit: contain;
+
+  /* Animation */
+  animation: flip 3s linear infinite;
+
+  /* 3D transform properties para smooth flip */
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+
+/* Contact */
+#contact p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+  background-color: #1c1c1c;
+  box-shadow: none;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.dark-mode .home-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+
+.dark-mode .home-text h1,
+.dark-mode .highlight-name,
+.dark-mode h2,
+.dark-mode .skill-list li,
+.dark-mode #contact p {
+  color: #f1f1f1;
+}
+
+.dark-mode ul.skill-list li {
+  background-color: #2a2a2a !important;
+  color: #f1f1f1 !important;
+}
+
